@@ -1,0 +1,140 @@
+:root {
+    --color-placeholder: #cccccc;
+    --color-disabled: #dfdfdf;
+    --color-text-disabled: #a3a3a3;
+}
+
+main {
+    width: 70vw;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+.barra_vermelha_titulo {
+    background-color: red;
+    width: 56px;
+    height: 8px;
+    border-radius: 4px;
+}
+
+.form_text_input label {
+    display: grid;
+    gap: 8px;
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border-radius: 4px;
+    border: solid 2px var(--color-placeholder);
+}
+
+input::placeholder {
+    color: var(--color-placeholder);
+}
+
+form {
+    margin-top: 64px;
+}
+
+.form_text_input {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+
+.form_radio_input {
+    margin-top: 32px;
+}
+
+.radio_group {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+}
+
+.radio_group label {
+    margin-right: 32px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 28px max-content;
+    gap: 8px;
+}
+
+.radio_group label span {
+    align-self: center;
+}
+
+button {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 12px;
+    border-radius: 24px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 32px;
+    
+}
+
+button img {
+    height: 18px;
+    align-self: center;
+    fill: white;
+}
+
+svg {
+    height: 24px;
+    align-self: center;
+}
+
+path {
+    
+    fill: white;
+}
+
+  input[type="radio"] {
+    appearance: none;
+    border: solid 2px var(--color-placeholder);
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  input[type="radio"]:checked {
+    background-color: red;
+    box-shadow: inset 0px 0px 0px 6px white;
+    border-color: red;
+  }
+
+  a {
+    color: red;
+  }
+
+  input:disabled {
+    background-color: var(--color-disabled);
+    cursor: not-allowed;
+  }
+
+  input:disabled::placeholder {
+    color: var(--color-text-disabled);
+  }
+
+  input:focus-visible {
+    outline: none;
+  }
+
+  input:focus-visible, input:focus {
+    border-color: green;
+  }
+
+  .botton_line {
+    border-radius: 24px;
+  }
